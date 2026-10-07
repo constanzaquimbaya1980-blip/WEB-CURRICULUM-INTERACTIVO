@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* Fuerza a que el teléfono se mantenga en una sola línea */
+.phone-single-line {
+  white-space: nowrap !important;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+/* Modal flotante para la IA */
+.ai-modal {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 360px;
+  max-width: 90%;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border: 2px solid #059669;
+  z-index: 9999;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.ai-modal.open {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.ai-modal-header {
+  background: #0A192F;
+  color: #ffffff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.ai-modal-body {
+  padding: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+  background: #F8FAFC;
+  flex: 1;
+}
+
+.ai-modal-footer {
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #E2E8F0;
+  background: #ffffff;
+}
+
+.ai-modal-footer input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  outline: none;
+}
+
+.ai-modal-footer button {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* GSI Material Sign in with Google Button */
+.gsi-material-button {
+  background-color: #FFFFFF;
+  border: 1px solid #DADCE0;
+  border-radius: 12px;
+  color: #3C4043;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 0.25px;
+  outline: none;
+  padding: 0 16px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.gsi-material-button:hover {
+  background-color: #F8F9FA;
+  border-color: #C6C6C6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.gsi-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
